@@ -1,8 +1,13 @@
 spring:
   application:
-    name: welcome
+    name: greet
   config:
     import:
     - optional:configserver:http://localhost:9093
 
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - refresh
