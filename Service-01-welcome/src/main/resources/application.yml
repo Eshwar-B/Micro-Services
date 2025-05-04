@@ -5,15 +5,15 @@ spring:
     admin:
       client:
         url: http://localhost:1111/
-  zipkin:
-    base-url: http://localhost:9411
-    enabled: true
-  sleuth:
-    sampler:
-      probability: 1.0
+#  zipkin:
+#    base-url: http://localhost:9411
+#    enabled: true
+#  sleuth:
+#    sampler:
+#      probability: 1.0
 
-server:
-  port: 8081
+#server:           if we configure port number, then the microservice runs on only one server.
+#  port: 8081      so do not configure port number so that it can run on many different servers.
 
 # When Eureka does not run on port 8761, configure manually like this:
 # eureka:
