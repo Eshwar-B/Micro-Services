@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: Service-01-welcome
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+  zipkin:
+    base-url: http://localhost:9411
+    enabled: true
+  sleuth:
+    sampler:
+      probability: 1.0
+
+server:
+  port: 8081
+
+# When Eureka does not run on port 8761, configure manually like this:
+# eureka:
+#   client:
+#     service-url:
+#       defaultZone: http://localhost:9090/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

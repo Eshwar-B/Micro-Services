@@ -1,0 +1,6 @@
+# Ignore Eclipse workspace metadata
+.metadata/
+
+# Ignore IDE-specific files
+*.log
+*.tmp
